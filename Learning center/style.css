@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'Noto-B';
+  src: url(fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Noto-R';
+  src: url(fonts/NotoSans-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main--page--head .main--page--first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.main--page--head .main--page--first .stack {
+  font-size: 24px;
+  font-family: 'Noto-R';
+  margin: 30px 0;
+}
+
+.main--page--head .main--page--first .main--page--active-back {
+  width: 10%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid #ffc400;
+  background: none;
+  cursor: pointer;
+}
+
+.main {
+  -webkit-box-shadow: 0px 0px 10px #747272;
+          box-shadow: 0px 0px 10px #747272;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main .main--header .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main--header .list li {
+  list-style-type: none;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.course {
+  text-align: center;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.course .course--title {
+  font-family: 'Noto-B';
+}
+
+.scroll {
+  max-width: 35px;
+  min-height: 75px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.scroll .scroll--down {
+  background-color: #d6d5d5;
+  text-align: center;
+  max-width: 10px;
+  min-height: 10px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll .scroll--down.active {
+  -webkit-transform: translateY(55px);
+          transform: translateY(55px);
+  background-color: black;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  border-radius: 50%;
+}
+
+.programming {
+  margin-top: 50px;
+  padding-top: 50px;
+  background-color: #ffc400;
+}
+
+.programming .programming--title {
+  font-family: 'Noto-R';
+  font-size: 36px;
+}
+
+.programming .programming--articles .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.programming .programming--articles .row .column-6 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 50%;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: 'Noto-R';
+}
+
+.programming .programming--articles .row .column-6 .column-6_a {
+  color: #fff;
+  -webkit-text-decoration-line: unset;
+          text-decoration-line: unset;
+}
+
+.programming .programming--articles .row .column-6.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.programming .programming--articles .row .column-6 .btn--read {
+  font-size: 14px;
+  font-family: 'Noto-B';
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #fff;
+  color: #ffc400;
+}
+
+.programming .programming--articles .row .column-6.second .swiper-initialized {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 300px;
+}
+
+.programming .programming--articles .row .column-6.second .swiper-pagination {
+  bottom: 5px;
+}
+
+.programming .programming--articles .row .column-6.second .swiper-slide img {
+  height: 200px;
+  width: 400px;
+}
+
+.lessons {
+  margin-top: 60px;
+}
+
+.lessons.title {
+  font-size: 30px;
+  font-family: 'Noto-B';
+  text-align: center;
+}
+
+.lessons.card .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 50px;
+}
+
+.lessons.card .row .column-4 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.lessons.card .row .column-4.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 10px #7c7b7b;
+          box-shadow: 0px 0px 10px #7c7b7b;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.lessons.card .row .column-4.card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  border: 2px;
+}
+
+.lessons.card .row .column-4.card img {
+  width: 70%;
+  margin-bottom: 30px;
+  max-height: 100px;
+}
+
+.lessons.card .row .column-4.title {
+  font-size: 24px;
+  font-family: 'Noto-R';
+  margin-bottom: 30px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.lessons.card .row .column-4 .btn {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Noto-B';
+}
+/*# sourceMappingURL=style.css.map */
